@@ -1,1 +1,1 @@
-# ProjectEuler
+# Project Euler Resolutions
