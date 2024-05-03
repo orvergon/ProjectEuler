@@ -1,0 +1,6 @@
+leap_year :: Int -> Bool
+leap_year x = (x `mod` 4 == 0) && (not (x `mod` 100 == 0) || (x `mod` 400 == 0))
+
+months :: Int -> [Int]
+  months year | leap_year year 
+uuuuuikk

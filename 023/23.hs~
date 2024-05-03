@@ -1,0 +1,9 @@
+import Data.List
+
+divisors :: Int -> [Int]
+divisors n = [x | x <- [1..n `div` 2], n `mod` x == 0]
+
+abundants :: [Int] -> [Int]
+abundants [] = []
+abundants (h:t) = if sum (divisors h) >= h then (h: abundants t)
+  else abundants t
